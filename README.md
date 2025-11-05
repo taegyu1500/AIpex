@@ -1,11 +1,12 @@
 # Project AIpex
 
-* AI를 활용한 증강현실 구현 및 시연
+* AI Object Detection 탑재된 스마트 헬맷 올빼미 개발
 
 ## High Level Design
 
-* (프로젝트 아키텍쳐 기술, 전반적인 diagram 으로 설명을 권장)
-
+* TBD
+* 헬멧에 스크린을 통해 Object Detection과 그 값을 이용한 증강현실 기술 구현하여 사용자에게 보여줌
+* 도로 상태, 후면 표시 등 자동차에 탑재되어 있는 기능 등을 헬멧에 탑재
 ## Clone code
 
 * (각 팀에서 프로젝트를 위해 생성한 repository에 대한 code clone 방법에 대해서 기술)
