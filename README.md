@@ -2,18 +2,24 @@
 
 * AI Object Detection이 탑재된 스마트 헬맷 올빼미 개발
 
-<img src="https://github.com/AIpex-sesac/AIpex/blob/main/sources/concept_art.png?raw=true" width="400px"/>
+## Concept arts
+
+<img src="https://github.com/AIpex-sesac/AIpex/blob/main/sources/concept_art.png?raw=true" width="300px"/>
+<video controls width="300">
+  <source src="https://github.com/AIpex-sesac/AIpex/blob/main/sources/concept_video.mp4?raw=true" type="video/mp4"/>
+  video.
+</video>
 
 ## High Level Design
 
-* 헬멧의 스크린을 통해 Object Detection과 그 결과를 활용한 증강현실을 착용자에게 제공
-* 네비게이션, 후방 카메라 등 자동차에 탑재되어 있는 편의기능을 헬멧에 탑재
+* 헬멧의 스크린을 통해 전방 Object Detection과 그 결과를 활용한 증강현실을 착용자에게 제공
+* 네비게이션, 후방 카메라 등 자동차에 탑재되어 있는 편의기능을 헬멧에 탑재하여 착용자에게 제공
 ## Clone code
 
 * (각 팀에서 프로젝트를 위해 생성한 repository에 대한 code clone 방법에 대해서 기술)
 
 ```shell
-git clone https://github.com/AIpex-sesac/AIpex
+git clone https://github.com/AIpex-sesac/AIpex.git
 ```
 
 ## Prerequite
@@ -53,8 +59,9 @@ python demo.py -i xxx -m yyy -d zzz
 ## Output
 
 * (프로젝트 실행 화면 캡쳐)
+* 현재 샘플 디자인
 
-![./result.jpg](./result.jpg)
+![./sample.jpg](./sources/design_sample.png)
 
 ## Appendix
 ```mermaid
@@ -65,6 +72,16 @@ flowchart LR
     D -->|결과 출력| E[(Display)]
 ```
 * (참고 자료 및 알아두어야할 사항들 기술)
+
+## Dataset and Model
+* 팀원들이 직접 카메라가 부착된 헬멧을 착용하고 한강변을 주행하여 데이터 수집
+* intel geti를 활용하여 labeling 진행
+### Model
+* ATSS-MobileNetV2
+### Classes
+1. bike
+2. person
+3. car
 
 ## 팀원 소개 및 역할 분담
   | Name | Role |
