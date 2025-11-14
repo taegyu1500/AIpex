@@ -1,6 +1,6 @@
 # Project AIpex
 
-* AI Object Detection이 탑재된 스마트 AI 헬멧 올빼미 개발
+* AI Object Detection이 탑재된 스마트 AI 헬멧 GLAUX 개발
 
 ## Concept arts
   |||
