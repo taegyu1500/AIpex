@@ -14,11 +14,6 @@
  - **U** : Unified
  - **X** : X-Vision
 
-## Concept arts
-  |||
-  |----|----|
-  |<img src="./sources/concept_art.png?raw=true" width="350px"/>|![concept demo](./sources/concept_video.gif)|
-
 ## 핵심내용
 
 * AI를 활용한 주행보조 기능 (Object Detection, Navigation, Rear Collision Warning)
@@ -31,7 +26,7 @@
 
 ## Process Flow Diagram (흐름도)
 ```mermaid
-flowchart LR
+flowchart TB
   %% Outer system
   subgraph System["Helmet"]
     %% Left module (Pi1 side / HMD)
@@ -78,14 +73,14 @@ flowchart LR
 * 모터사이클용 무선통신기기(세계 60% 점유)
 * 주요 제품군 : 아웃도어 스포츠용 블루투스 헤드셋, 스마트 헬멧.
 
-  |구분|GLAUX(AI AR 헬멧)|세나(스마트 헬멧)|
-  |----|----|----|
-  |핵심가치|능동적 안전 및 생명보호|편의성 및 그룹통신|
-  |주요기능|실시간 AR HUD(속도, 방향, 객체정보)|Mesh/Bluetooth 인터콤,음악재생, 전화통화,GPS 음성안내|
-  |핵심기술|Edge Ai(Hailo Npu)기반 초저지연 Visual FW|Bluetooth 5.2|
-  |안전 시스템|접근 감지 능동 AR 경보|후방 LED 테일라이트 내장(후미등, 브레이크등)|
-  |정보전달방식|시각적 AR 정보(시선 내 HUD정보)|청각적 오디오 정보(스피커/ 이어폰)|
-  |사용자환경|복잡한 도심 주행 및 초저지연 안전 요구 환경|그룹 라이딩 및 장거리 통신환경|
+||GLAUX(AI AR 헬멧)|세나(스마트 헬멧)|
+|---|----|----|
+|핵심가치|능동적 안전 및 생명보호|편의성 및 그룹통신|
+|주요기능|실시간 AR HUD(속도, 방향, 객체정보)|Mesh/Bluetooth 인터콤,음악재생, 전화통화,GPS 음성안내|
+|핵심기술|Edge Ai(Hailo Npu)기반 초저지연 Visual FW|Bluetooth 5.2|
+|안전 시스템|접근 감지 능동 AR 경보|후방 LED 테일라이트 내장(후미등, 브레이크등)|
+|정보전달방식|시각적 AR 정보(시선 내 HUD정보)|청각적 오디오 정보(스피커/ 이어폰)|
+|사용자환경|복잡한 도심 주행 및 초저지연 안전 요구 환경|그룹 라이딩 및 장거리 통신환경|
 **결론**
 * GLAUX는 AI기반 감지 기술을 활용한 능동적 안전기능 탑재.
 * 기존 통신 중심 제품과 명확한 차별점 확보.
@@ -103,7 +98,7 @@ flowchart LR
 ### 사회적 파급(기대) 효과
 - 헬멧 착용문화의 활성화 및 교통안전 개선
 
-  |<img src="./sources/con01.jpg?raw=true"/>
+<img src="./sources/con01.jpg?raw=true"/>
 
 #### 안전 문화 개선
 - AI기반 감지 체계와 후방시야 보조기능을 탑재하여 주행 중 위험 상황 조기 인지 및 경고 ➜ 자전거 교통사고 발생률의 유의미한 감소 기대
@@ -175,6 +170,9 @@ python demo.py -i xxx -m yyy -d zzz
 * (참고 자료 및 알아두어야할 사항들 기술)
 
 ## Dataset and Model
+
+<img src="./sources/dataset_preview.png?raw=true"/>
+
 * 직접 카메라가 부착된 헬멧을 착용하고 한강변을 촬영하여 데이터 수집
 * intel geti를 활용하여 labeling 진행
 ### Model
