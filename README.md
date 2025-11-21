@@ -1,4 +1,13 @@
 # Project AIpex
+## 팀원 소개
+  | Name | Role |
+  |----|----|
+  | 남대문 | Development |
+  | 성시경 | Data management, 3D Modeling |
+  | 장태규 | Project lead, Architect |
+  | 최종인 | UI design, Development |
+
+## 개요
 <img src="./sources/logo/logo_2.svg?raw=true" width="200px"/>
 
 <img src="./sources/logo/GLAUX.svg?raw=true" width="200px"/>
@@ -6,7 +15,7 @@
 ### GLAUX(AI helmet with AR HMD)
  - GLAUX는 고대 그리스어로 '올빼미(Owl)'를 뜻함.
  - 상징성 : 올빼미는 지혜(Wisdom), 통찰력(Insight), 그리고 진실을 꿰뚫어 보는 시야(Vision)를 상징.
- - 제품 목표와의 연결: GLAUX는 단순한 정보 표시 장치가 아니라, 사용자에게 AI를 통해 가장 안전하고 효율적인 라이딩을 위한 지능적인 통찰력과 정보를 제공하여, 라이더의 인지 능력을 증강시키려는 목표로 함. 따라서 이 강력한 상징을 이름으로 채택.
+ - 제품 목표와의 연결: GLAUX는 단순한 정보 표시 장치가 아니라, 사용자에게 AI를 통해 가장 안전하고 효율적인 라이딩을 위한 지능적인 통찰력과 정보를 제공하여, 라이더의 인지능력 증강을 목표로 함. 따라서 이 강력한 상징을 이름으로 채택.
 ### GLAUX의 기술적 정체성: 핵심 가치의 이니셜
  - **G** : Guidance 
  - **L** : Logic
@@ -53,6 +62,27 @@ flowchart TB
   User@{ shape: cyl}
   SmartPhone@{ shape: h-cyl}
 ```
+## 제품 디자인
+### 헬멧 부착물 개별 이미지
+  |||
+  |----|----|
+  |<img src="./sources/design_sample1.png?raw=true" width="350px"/>|![./sample2.jpg](./sources/design_sample2.png)|
+
+### 헬멧 전체 디자인 이미지
+  ||||
+  |----|----|----|
+  |![./helmet1.jpg](./sources/helmet_design1.png)|![./helmet2.jpg](./sources/helmet_design2.png)|![./helmet3.jpg](./sources/helmet_design3.png)|
+  |![./helmet4.jpg](./sources/helmet_design4.png)|![./helmet5.jpg](./sources/helmet_design5.png)|![./helmet6.jpg](./sources/helmet_design6.png)|
+
+### 1차 MVP 이미지
+  ||||
+  |----|----|----|
+  |![./equip_sample.jpg](./sources/equip_sample.jpg)|<img src="./sources/mvp_1.jpg?raw=true" width="1400px"/>|<img src="./sources/mvp_2.jpg?raw=true" width="1340px"/>|
+
+#### 1차 피드백
+* 카메라 ffc 케이블 보호 방안 필요
+* HDMI/전원 케이블 정리 방안 필요
+* 부착물로 인한 헬멧 무게중심 이슈
 
 ## 기대효과
 ### 경제적 기대 효과
@@ -108,7 +138,7 @@ flowchart TB
 - 제품 보급 = 헬멧 착용문화의 활성화 및 교통안전 개선효과로 의미 확장
 
 
-## Clone code
+## 클론 코드
 
 * (각 팀에서 프로젝트를 위해 생성한 repository에 대한 code clone 방법에 대해서 기술)
 
@@ -126,7 +156,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Steps to build
+## 빌드 방법
 
 * (프로젝트를 실행을 위해 빌드 절차 기술)
 
@@ -138,7 +168,7 @@ make
 make install
 ```
 
-## Steps to run
+## 실행 방법
 
 * (프로젝트 실행방법에 대해서 기술, 특별한 사용방법이 있다면 같이 기술)
 
@@ -150,27 +180,11 @@ cd /path/to/repo/xxx/
 python demo.py -i xxx -m yyy -d zzz
 ```
 
-## Output
+## 결과물
 
 * (프로젝트 실행 화면 캡쳐)
 
-## Design
-### 헬멧 부착물 개별 이미지
-  |||
-  |----|----|
-  |![./sample1.jpg](./sources/design_sample1.png)|![sample demo](./sources/sample_video.gif)|
-  |![./sample2.jpg](./sources/design_sample2.png)||
-
-### 헬멧 전체 이미지
-  ||||
-  |----|----|----|
-  |![./helmet1.jpg](./sources/helmet_design1.png)|![./helmet2.jpg](./sources/helmet_design2.png)|![./helmet3.jpg](./sources/helmet_design3.png)|
-  |![./helmet4.jpg](./sources/helmet_design4.png)|![./helmet5.jpg](./sources/helmet_design5.png)|![./helmet6.jpg](./sources/helmet_design6.png)|
-
-## Appendix
-* (참고 자료 및 알아두어야할 사항들 기술)
-
-## Dataset and Model
+## 데이터셋 및 활용 모델
 
 <img src="./sources/dataset_preview.png?raw=true"/>
 
@@ -184,13 +198,8 @@ python demo.py -i xxx -m yyy -d zzz
 2. person
 3. car
 
-## 팀원 소개 및 역할 분담
-  | Name | Role |
-  |----|----|
-  | 남대문 | Development |
-  | 성시경 | Data management, 3D Modeling |
-  | 장태규 | Project lead, Architect |
-  | 최종인 | UI design, Development |
+## 참고자료
+* (참고 자료 및 알아두어야할 사항들 기술)
 
 ## Google Drive
 

@@ -1,3 +1,4 @@
 webcam.proto
 webcam_*.py
 /.venv
+naver_*.py
